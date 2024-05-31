@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/FiraSans-Regular.ttf');
+  font-weight: regular;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/FiraSans-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  font-family: 'Fira Sans';
+  font-weight: 500;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}

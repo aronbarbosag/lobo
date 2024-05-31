@@ -1,0 +1,125 @@
+.experiencia {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  margin: 0 auto;
+  padding: 40px;
+  align-items: start;
+  gap: 110px;
+}
+.experiencia h1 {
+  grid-column: 1;
+  font-size: 8rem;
+  max-width: 450px;
+  word-break: break-all;
+  color: #e0e0e0;
+}
+.texto-experiencia {
+  max-width: 40ch;
+  padding-top: 14px;
+  margin-bottom: 60px;
+  font-size: 1.5rem;
+}
+.experiencia-conteudo {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 50px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  padding: 20px 20px 30px 20px;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(to top, #d8870d, #ffb039);
+    position: absolute;
+    left: -4px;
+    top: 20px;
+  }
+}
+.conteudo-descricao {
+  grid-column: 1;
+}
+.conteudo-descricao p {
+  padding-top: 10px;
+  font-size: 0.875rem;
+  color: #525252;
+}
+.experiencia-conteudo h5 {
+  font-size: 1.125rem;
+}
+.cargos {
+  grid-column: 2;
+}
+.cargos ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 10px;
+}
+.cargos li {
+  background-color: #fff;
+  padding: 5px 10px;
+  color: #141414;
+
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 976px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+  .experiencia h1 {
+    font-size: 5rem;
+    max-width: initial;
+  }
+  .texto-experiencia {
+    margin: 0 auto;
+    max-width: 60ch;
+  }
+}
+@media (max-width: 544px) {
+  .experiencia {
+    gap: 5px;
+  }
+  .experiencia h1 {
+    font-size: 3rem;
+    color: #141414;
+  }
+  .texto-experiencia {
+    padding-top: 0px;
+    font-size: 1.2rem;
+  }
+  .cargos li {
+    font-size: 0.725rem;
+  }
+}
+@media (max-width: 400px) {
+  .conteudo-descricao p {
+    font-size: 0.75rem;
+  }
+  .experiencia-conteudo {
+    gap: 2rem;
+  }
+}
+@media (max-width: 360px) {
+  .experiencia h1 {
+    font-size: 1.5rem;
+  }
+  .texto-experiencia {
+    font-size: 1rem;
+  }
+  .experiencia-conteudo {
+    gap: 10px;
+  }
+}
